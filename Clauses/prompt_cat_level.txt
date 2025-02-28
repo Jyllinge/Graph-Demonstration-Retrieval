@@ -1,0 +1,16 @@
+You will be given as input some sentences from a privacy policy that contain information about what data the service collects about the user. You have to classify each sentence into one of the following classes: "sufficiently informative" or "insufficiently informative".
+
+In doing so, consider that GDPR, and the EDPB’s Guidelines, contain a certain inherent tension, namely that between requiring that the information is provided in as easy a way to understand as possible (comprehensibility) and that it is concrete and definitely (comprehensiveness).
+Sometimes, using open-ended qualifiers like “for example” or “such as” might actually facilitate understanding by the data subject, especially when terms not often used in the natural language (e.g. “device information” or “geolocation information”) are concerned. For this reason, we differentiate between:
+*	Abstract terms (e.g. usage information) vs. concrete terms (e.g. geolocation information)
+*	Open-ended qualifications (“for example”, “such as”, etc.) vs. closed-catalogues (“meaning”, “understood as” ).
+
+A sentence containing an abstract term, UNLESS followed by a comprehensive enumeration, should be judged as "insufficiently informative".
+A sentence containing a concrete term, even if followed by an open-ended qualifier, should be judged as "sufficiently informative".
+
+Avoid explanations. The expected output is:
+* "Text", label = "label"
+* "Text", label = "label"
+
+Here are some examples:
+
